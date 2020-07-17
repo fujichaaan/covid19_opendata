@@ -5,14 +5,14 @@ This page is a repository for analysis codes used in this paper.
 The original data is publicly available on https://osf.io/aubkc/.
 
 ## 2. Paper page
-TBD
+Submitted
 
 ## 3. Contributed authors
-Ryosuke Fujii [Fujita Health University]
+Ryosuke Fujii [Fujita Health University] PERSONAL PAGE
 
-Kensuke Suzuki [Pennsylvania State University]
+Kensuke Suzuki [Pennsylvania State University] PERSONAL PAGE
 
-Junichiro Niimi [Meijo University]
+Junichiro Niimi [Meijo University] PERSONAL PAGE
 
 ## 4. Comments & Questions
 Please contact us if you have comments and questions on this code.
