@@ -1,4 +1,4 @@
-# Public perceptions, individual characteristics, and health preventive behaviors for COVID-19 among adults in six countries: a cross-sectional study
+# Public perceptions, individual characteristics, and preventive behaviors for COVID-19 in six countries: a cross-sectional study
 This page is a repository for analysis codes used in this paper.
 
 ## 1. Original data
