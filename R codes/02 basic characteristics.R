@@ -21,6 +21,6 @@ data$recom_doctors <- factor(as.numeric(data$reason_behchange_reccom_doctors == 
 data$recom_polit <- factor(as.numeric(data$reason_behchange_reccom_polit == "Selected"))
 
 #Characteristics for the reasons in all subjects according to countries
-listvar <- c("conformity", "recom_family", "recom_ doctors", "recom_polit")
+listvar <- c("conformity", "recom_family", "recom_doctors", "recom_polit")
 table2 <- CreateTableOne(vars = listvar, factorVars = listcat, strata = "country", data = data)
 table2 <- print(table2); write.csv(table2, "Table2.csv")
