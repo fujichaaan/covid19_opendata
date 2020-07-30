@@ -27,6 +27,7 @@ pvalue_china <- summary(result)$coefficients[,"Pr(>|z|)"]
 result <- glm(mask_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_mask + mask_before, data = data_italy, family = binomial); summary(result)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_italy <- round(exp(x$coefficients[,1]), 2)
@@ -38,6 +39,7 @@ pvalue_italy <- summary(result)$coefficients[,"Pr(>|z|)"]
 result <- glm(mask_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_mask + mask_before, data = data_japan, family = binomial); summary(result)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_japan <- round(exp(x$coefficients[,1]), 2)
@@ -49,6 +51,7 @@ pvalue_japan <- summary(result)$coefficients[,"Pr(>|z|)"]
 result <- glm(mask_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_mask + mask_before, data = data_korea, family = binomial); summary(result)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_korea <- round(exp(x$coefficients[,1]), 2)
@@ -60,6 +63,7 @@ pvalue_korea <- summary(result)$coefficients[,"Pr(>|z|)"]
 result <- glm(mask_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_mask + mask_before, data = data_uk, family = binomial); summary(result)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_uk <- round(exp(x$coefficients[,1]), 2)
@@ -71,6 +75,7 @@ pvalue_uk <- summary(result)$coefficients[,"Pr(>|z|)"]
 result <- glm(mask_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_mask + mask_before, data = data_us, family = binomial); summary(result)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_us <- round(exp(x$coefficients[,1]), 2)
