@@ -8,6 +8,7 @@
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + conformity, data = data_china, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ch_wash_conformity <- round(exp(x$coefficients[20, 1]), 2)
@@ -20,6 +21,7 @@ z1 <- c(OR_ch_wash_conformity, paste(LowerCL_ch_wash_conformity, UpperCL_ch_wash
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_family, data = data_china, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ch_wash_recom_family <- round(exp(x$coefficients[20, 1]), 2)
@@ -32,6 +34,7 @@ z2 <- c(OR_ch_wash_recom_family, paste(LowerCL_ch_wash_recom_family, UpperCL_ch_
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_doctors, data = data_china, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ch_wash_recom_doctors <- round(exp(x$coefficients[20, 1]), 2)
@@ -44,6 +47,7 @@ z3 <- c(OR_ch_wash_recom_doctors, paste(LowerCL_ch_wash_recom_doctors, UpperCL_c
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_polit, data = data_china, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ch_wash_recom_polit <- round(exp(x$coefficients[20, 1]), 2)
@@ -60,6 +64,7 @@ china_mask <- rbind(z1, z2, z3, z4)
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + conformity, data = data_italy, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_it_wash_conformity <- round(exp(x$coefficients[20, 1]), 2)
@@ -72,6 +77,7 @@ z1 <- c(OR_it_wash_conformity, paste(LowerCL_it_wash_conformity, UpperCL_it_wash
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_family, data = data_italy, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_it_wash_recom_family <- round(exp(x$coefficients[20, 1]), 2)
@@ -84,6 +90,7 @@ z2 <- c(OR_it_wash_recom_family, paste(LowerCL_it_wash_recom_family, UpperCL_it_
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_doctors, data = data_italy, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_it_wash_recom_doctors <- round(exp(x$coefficients[20, 1]), 2)
@@ -96,6 +103,7 @@ z3 <- c(OR_it_wash_recom_doctors, paste(LowerCL_it_wash_recom_doctors, UpperCL_i
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_polit, data = data_italy, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_it_wash_recom_polit <- round(exp(x$coefficients[20, 1]), 2)
@@ -112,6 +120,7 @@ italy_mask <- rbind(z1, z2, z3, z4)
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + conformity, data = data_japan, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_jp_wash_conformity <- round(exp(x$coefficients[20, 1]), 2)
@@ -124,6 +133,7 @@ z1 <- c(OR_jp_wash_conformity, paste(LowerCL_jp_wash_conformity, UpperCL_jp_wash
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_family, data = data_japan, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_jp_wash_recom_family <- round(exp(x$coefficients[20, 1]), 2)
@@ -136,6 +146,7 @@ z2 <- c(OR_jp_wash_recom_family, paste(LowerCL_jp_wash_recom_family, UpperCL_jp_
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_doctors, data = data_japan, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_jp_wash_recom_doctors <- round(exp(x$coefficients[20, 1]), 2)
@@ -148,6 +159,7 @@ z3 <- c(OR_jp_wash_recom_doctors, paste(LowerCL_jp_wash_recom_doctors, UpperCL_j
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_polit, data = data_japan, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_jp_wash_recom_polit <- round(exp(x$coefficients[20, 1]), 2)
@@ -164,6 +176,7 @@ japan_mask <- rbind(z1, z2, z3, z4)
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + conformity, data = data_korea, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ko_wash_conformity <- round(exp(x$coefficients[20, 1]), 2)
@@ -176,6 +189,7 @@ z1 <- c(OR_ko_wash_conformity, paste(LowerCL_ko_wash_conformity, UpperCL_ko_wash
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_family, data = data_korea, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ko_wash_recom_family <- round(exp(x$coefficients[20, 1]), 2)
@@ -188,6 +202,7 @@ z2 <- c(OR_ko_wash_recom_family, paste(LowerCL_ko_wash_recom_family, UpperCL_ko_
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_doctors, data = data_korea, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ko_wash_recom_doctors <- round(exp(x$coefficients[20, 1]), 2)
@@ -200,6 +215,7 @@ z3 <- c(OR_ko_wash_recom_doctors, paste(LowerCL_ko_wash_recom_doctors, UpperCL_k
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_polit, data = data_korea, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_ko_wash_recom_polit <- round(exp(x$coefficients[20, 1]), 2)
@@ -216,6 +232,7 @@ korea_mask <- rbind(z1, z2, z3, z4)
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + conformity, data = data_uk, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_uk_wash_conformity <- round(exp(x$coefficients[20, 1]), 2)
@@ -228,6 +245,7 @@ z1 <- c(OR_uk_wash_conformity, paste(LowerCL_uk_wash_conformity, UpperCL_uk_wash
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_family, data = data_uk, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_uk_wash_recom_family <- round(exp(x$coefficients[20, 1]), 2)
@@ -240,6 +258,7 @@ z2 <- c(OR_uk_wash_recom_family, paste(LowerCL_uk_wash_recom_family, UpperCL_uk_
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_doctors, data = data_uk, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_uk_wash_recom_doctors <- round(exp(x$coefficients[20, 1]), 2)
@@ -252,6 +271,7 @@ z3 <- c(OR_uk_wash_recom_doctors, paste(LowerCL_uk_wash_recom_doctors, UpperCL_u
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_polit, data = data_uk, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_uk_wash_recom_polit <- round(exp(x$coefficients[20, 1]), 2)
@@ -268,6 +288,7 @@ uk_mask <- rbind(z1, z2, z3, z4)
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + conformity, data = data_us, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_us_wash_conformity <- round(exp(x$coefficients[20, 1]), 2)
@@ -280,6 +301,7 @@ z1 <- c(OR_us_wash_conformity, paste(LowerCL_us_wash_conformity, UpperCL_us_wash
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_family, data = data_us, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_us_wash_recom_family <- round(exp(x$coefficients[20, 1]), 2)
@@ -292,6 +314,7 @@ z2 <- c(OR_us_wash_recom_family, paste(LowerCL_us_wash_recom_family, UpperCL_us_
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_doctors, data = data_us, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_us_wash_recom_doctors <- round(exp(x$coefficients[20, 1]), 2)
@@ -304,6 +327,7 @@ z3 <- c(OR_us_wash_recom_doctors, paste(LowerCL_us_wash_recom_doctors, UpperCL_u
 result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_policy_effectiveness_gather + wash_before + recom_polit, data = data_us, family = binomial)
 
 #Calculating odds ratios
+ModelName <- result
 x <- summary(ModelName)
 y <- confint(ModelName, level=1-alpha)
 OR_us_wash_recom_polit <- round(exp(x$coefficients[20, 1]), 2)
@@ -315,4 +339,14 @@ z4 <- c(OR_us_wash_recom_polit, paste(LowerCL_us_wash_recom_polit, UpperCL_us_wa
 us_mask <- rbind(z1, z2, z3, z4)
 
 wash_behav_change <- cbind(china_mask, italy_mask, japan_mask, korea_mask, uk_mask, us_mask)
+
+rownames(wash_behav_change) <- c("conformity","recom_family","recom_doctors","recom_polit")
+country = c("(china)", "(italy)", "(japan)", "(korea)", "(uk)", "(us)")
+col = c("OR","CL","pvalue")
+collist=c()
+for (c in country){
+  collist = append(collist,paste(col,c,sep=""))
+}
+colnames(wash_behav_change) = collist
+
 write.csv(wash_behav_change, "wash_behav_change.csv")
