@@ -8,11 +8,11 @@ The original data is publicly available on https://osf.io/aubkc/.
 Submitted
 
 ## 3. Contributed authors
-Ryosuke Fujii [Fujita Health University] PERSONAL PAGE
+Ryosuke Fujii [Fujita Health University] PERSONAL PAGE:http://ryosukefujii.mystrikingly.com/
 
-Kensuke Suzuki [Pennsylvania State University] PERSONAL PAGE
+Kensuke Suzuki [Pennsylvania State University] PERSONAL PAGE:https://sites.google.com/site/kensukesuzuki04/home
 
-Junichiro Niimi [Meijo University] PERSONAL PAGE
+Junichiro Niimi [Meijo University] PERSONAL PAGE:https://jun-systems.info/
 
 ## 4. Comments & Questions
 Please contact us if you have comments and questions on this code.
