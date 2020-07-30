@@ -5,7 +5,7 @@ This page is a repository for analysis codes used in this paper.
 The original data is publicly available on https://osf.io/aubkc/.
 
 ## 2. Paper page
-Submitted
+Submitted (Upload after the acceptance)
 
 ## 3. Contributed authors
 Ryosuke Fujii [Fujita Health University] PERSONAL PAGE:http://ryosukefujii.mystrikingly.com/
