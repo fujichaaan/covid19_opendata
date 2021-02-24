@@ -4,7 +4,7 @@
 ## 1. 研究に用いたデータ
 研究に使用したデータは、Dr. Michele Belotらのページで公開されています。 （ https://osf.io/aubkc/ ）
 
-## 2. 著者のページ
+## 2. 著者
 藤井　亮輔（藤田医科大学医療科学部） 個人ページ：http://ryosukefujii.mystrikingly.com/
 
 鈴木　健介（ペンシルベニア州立大学経済学部） 個人ページ：https://sites.google.com/site/kensukesuzuki04/home
