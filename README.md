@@ -5,7 +5,7 @@ This page is a repository for analysis codes used in this paper.
 The original data is publicly available on https://osf.io/aubkc/.
 
 ## 2. Paper page
-Submitted (Upload after the acceptance)
+Accepted (Environmental Health and Preventive Medicine)
 
 ## 3. Contributed authors
 Ryosuke Fujii [Fujita Health University] PERSONAL PAGE:http://ryosukefujii.mystrikingly.com/
@@ -21,3 +21,5 @@ Please contact us if you have comments and questions on this code.
 - Kensuke Suzuki (kxs974ATpsu.edu)
 
 *Please change AT to @ when you send an e-mail.
+
+## Japanese version
