@@ -90,4 +90,4 @@ Mask <- cbind(OR_china, LowerCL_china, UpperCL_china, pvalue_china,
               OR_korea, LowerCL_korea, UpperCL_korea, pvalue_korea,
               OR_uk, LowerCL_uk, UpperCL_uk, pvalue_uk,
               OR_us, LowerCL_us, UpperCL_us, pvalue_us)
-write.csv(Mask, "result_mask_now.csv")
+write.csv(Mask, "Table3.csv")
