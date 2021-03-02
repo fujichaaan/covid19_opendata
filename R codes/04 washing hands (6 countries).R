@@ -3,7 +3,7 @@
 #####################################################################
 
 #1. China
-result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands + wash_before, data = data_china, family = binomial); summary(result)
+result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands, data = data_china, family = binomial); summary(result)
 
 #Calculating odds ratios
 ModelName <- result
@@ -15,7 +15,7 @@ UpperCL_china <- round(exp(y[,2]), 2)
 pvalue_china <- summary(result)$coefficients[,"Pr(>|z|)"]
 
 #2. Italy
-result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands + wash_before, data = data_italy, family = binomial); summary(result)
+result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands, data = data_italy, family = binomial); summary(result)
 
 #Calculating odds ratios
 ModelName <- result
@@ -27,7 +27,7 @@ UpperCL_italy <- round(exp(y[,2]), 2)
 pvalue_italy <- summary(result)$coefficients[,"Pr(>|z|)"]
 
 #3. Japan
-result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands + wash_before, data = data_japan, family = binomial); summary(result)
+result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands, data = data_japan, family = binomial); summary(result)
 
 #Calculating odds ratios
 ModelName <- result
@@ -39,7 +39,7 @@ UpperCL_japan <- round(exp(y[,2]), 2)
 pvalue_japan <- summary(result)$coefficients[,"Pr(>|z|)"]
 
 #4. Korea
-result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands + wash_before, data = data_korea, family = binomial); summary(result)
+result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands, data = data_korea, family = binomial); summary(result)
 
 #Calculating odds ratios
 ModelName <- result
@@ -51,7 +51,7 @@ UpperCL_korea <- round(exp(y[,2]), 2)
 pvalue_korea <- summary(result)$coefficients[,"Pr(>|z|)"]
 
 #5. UK
-result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands + wash_before, data = data_uk, family = binomial); summary(result)
+result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands, data = data_uk, family = binomial); summary(result)
 
 #Calculating odds ratios
 ModelName <- result
@@ -63,7 +63,7 @@ UpperCL_uk <- round(exp(y[,2]), 2)
 pvalue_uk <- summary(result)$coefficients[,"Pr(>|z|)"]
 
 #6. US
-result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands + wash_before, data = data_us, family = binomial); summary(result)
+result <- glm(wash_now ~ as.numeric(factor(region)) + age65 + gender + pubtrans + living_area + living_arrangement + income_group + neg_nonfin_anxiety + belief_you_got_infected + belief_inf_serious_hosp + belief_effectiveness_washinghands, data = data_us, family = binomial); summary(result)
 
 #Calculating odds ratios
 ModelName <- result
@@ -81,4 +81,4 @@ Wash <- cbind(OR_china, LowerCL_china, UpperCL_china, pvalue_china,
               OR_korea, LowerCL_korea, UpperCL_korea, pvalue_korea,
               OR_uk, LowerCL_uk, UpperCL_uk, pvalue_uk,
               OR_us, LowerCL_us, UpperCL_us, pvalue_us)
-write.csv(Wash, "result_wash_now.csv")
+write.csv(Wash, "Table4.csv")
