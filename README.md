@@ -22,5 +22,5 @@ Please contact us if you have comments and questions on this code.
 
 *Please change AT to @ when you send an e-mail.
 
-## Japanese version
+## 日本語はこちら
 https://github.com/fujichaaan/covid19_opendata/blob/master/README_JAP.md
