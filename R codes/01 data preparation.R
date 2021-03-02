@@ -1,5 +1,5 @@
 #The original data is publicly available on https://osf.io/aubkc/.
-#Before using this code, please download this dataset on your local directory.
+#Before using this code, please download the dataset as "public_dataset.csv" on your local directory.
 
 ###########################################
 ##     1. Preparation for analysis       ##
