@@ -20,7 +20,7 @@
 *実際に送るときは、ATを@に変換してから送ってください。
 
 ## 4. 論文の要約ページ
-
+https://drive.google.com/file/d/1I1kW1loDyXWlmCea0BDAxLJBx151J1pQ/view
 
 ## English ver.
 https://github.com/fujichaaan/covid19_opendata/blob/master/README.md
